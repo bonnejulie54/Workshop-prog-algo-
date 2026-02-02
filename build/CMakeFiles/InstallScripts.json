@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/juliebonne/Desktop/ECOLE/IMAC/semestre_1/prog algo/workshop/S1-Prog-Workshop/build/cmake_install.cmake",
+		"/Users/juliebonne/Desktop/ECOLE/IMAC/semestre_1/prog algo/workshop/S1-Prog-Workshop/build/lib/sil/cmake_install.cmake",
+		"/Users/juliebonne/Desktop/ECOLE/IMAC/semestre_1/prog algo/workshop/S1-Prog-Workshop/build/lib/sil/lib/glm/cmake_install.cmake",
+		"/Users/juliebonne/Desktop/ECOLE/IMAC/semestre_1/prog algo/workshop/S1-Prog-Workshop/build/lib/sil/lib/glm/glm/cmake_install.cmake",
+		"/Users/juliebonne/Desktop/ECOLE/IMAC/semestre_1/prog algo/workshop/S1-Prog-Workshop/build/lib/sil/lib/img/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

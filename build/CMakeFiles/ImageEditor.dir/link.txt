@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/ImageEditor.dir/lib/random.cpp.o CMakeFiles/ImageEditor.dir/src/main.cpp.o -o ImageEditor  lib/sil/libsil.a lib/sil/lib/img/libimg.a lib/sil/lib/img/libstb_image.a

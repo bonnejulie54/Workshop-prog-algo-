@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsil.a CMakeFiles/sil.dir/src/sil.cpp.o
+/usr/bin/ranlib libsil.a
