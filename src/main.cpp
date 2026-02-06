@@ -39,6 +39,17 @@ void echange_canaux(sil::Image&image){
         }
     }
 }
+
+void degrade(sil::Image&image){
+    sil::Image copy= image; 
+    for(int y=0; y<image.height();++y){
+        for ( int x=0;x<image.width();++x){
+            float t = static_cast<float>(x)/(image.width()-1);
+            image.pixel(x,y)={t,t,t};    
+             }
+    }
+}
+ 
 void negatif(sil::Image&image){
     sil::Image copy= image; 
     for(int y=0; y<image.height();++y){
@@ -187,9 +198,13 @@ void glitch(sil::Image& image) {
 
 int main()
 {
-    sil::Image image{"images/logo.png"};
+    sil::Image image{300/*width*/, 200/*height*/};
+    degrade(image);
+    image.save("output/degrade.png");
+    
+    {sil::Image image{"images/logo.png"};
     glitch(image);
-    image.save("output/logoGlitch.png");
+    image.save("output/logoGlitch.png");}
     
     {sil::Image image{500/*width*/, 500/*height*/};
     rosace(image);
