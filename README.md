@@ -21,14 +21,14 @@ Pour cet exercice, la difficulté rencontré est de ne pas créer un symétrie a
 ![Après](./output/logoNegatif.png)
 
 ### Dégradé 
-![Résultat](./output/degarde.png)
+![Résultat](./output/degrade.png)
 
 ### Bruit
 ![Avant](./images/logo.png)
 ![Après](./output/logoBruit.png)
 
 ### Rotation 
-![Avant](./oimages/logo.png)
+![Avant](./images/logo.png)
 ![Après](./output/logoRotation.png)
 Pour cet exercice, la difficulté a été de comprendre comment passé d'un repère a un autre.
 
