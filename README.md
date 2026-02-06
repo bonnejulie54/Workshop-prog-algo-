@@ -1,49 +1,49 @@
 # Workshop Programmation et algorithmique 
 ### Garder que le vert 
-![Avant](./output/pouet.png)
+![Avant](./images/logo.png)
 ![Après](./output/logoVert.png)
 
 ### Echanger les canaux 
-![Avant](./output/pouet.png)
+![Avant](./images/logo.png)
 ![Après](./output/logoEchange.png)
 
 ### En noir et blanc
-![Avant](./output/pouet.png)
+![Avant](./images/logo.png)
 ![Après](./output/logoNb.png)
 
 ### Effet miroir 
-![Avant](./output/pouet.png)
+![Avant](./images/logo.png)
 ![Après](./output/logoMiroir.png)
 Pour cet exercice, la difficulté rencontré est de ne pas créer un symétrie au centre, pour cela il faut créer une copie de l'image de base afin de ne pas recopier des pixels déja modifié.
 
 ### Négatif 
-![Avant](./output/pouet.png)
+![Avant](./images/logo.png)
 ![Après](./output/logoNegatif.png)
 
 ### Dégradé 
 ![Résultat](./output/degarde.png)
 
 ### Bruit
-![Avant](./output/pouet.png)
+![Avant](./images/logo.png)
 ![Après](./output/logoBruit.png)
 
 ### Rotation 
-![Avant](./output/pouet.png)
+![Avant](./oimages/logo.png)
 ![Après](./output/logoRotation.png)
 Pour cet exercice, la difficulté a été de comprendre comment passé d'un repère a un autre.
 
 ### RGB Split 
-![Avant](./output/pouet.png)
+![Avant](./images/logo.png)
 ![Après](./output/logoRgbSplit.png)
 Pour cet exercice, la difficulté a été de trouve les bonnes conditions.
 
 ### Eclaircir 
-![Avant](./images/photo.jng)
+![Avant](./images/photo.jpg)
 ![Après](./output/photoEclaircit.jpg)
 Pour cet exercice, la difficulté a été de trouvé la formule qui correspond au graphique transmis dans la consigne.
 
 ### Assombrir
-![Avant](./images/photo.jng)
+![Avant](./images/photo.jpg)
 ![Après](./output/photoAssombrit.jpg)
 Pour cet exercice, la difficulté a été la même que pour l'exercice Eclaircir.
 
@@ -60,7 +60,7 @@ Pour cette exercice les difficultés on été de :
 - Trouver une manière de simplifier les calculs très long afin de ne pas faire des erreurs 
 
 ### Glitch
-![Avant](./output/pouet.png)
+![Avant](./images/logo.png)
 ![Après](./output/logoRgbSplit.png)
 Pour cet exercice, la difficulté a été de a gestion de l’échange des pixels entre deux zones. Sans variable temporaire, la première affectation écrasait la valeur initiale, ce qui empêchait un véritable échange et modifiait le rendu de l’effet glitch.
 
