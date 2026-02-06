@@ -186,10 +186,10 @@ void glitch(sil::Image& image) {
 
         for (int y = 0; y < h; y++) {
             for (int x = 0; x < w; x++) {
+                auto temp = image.pixel(x1 + x, y1 + y);
 
                 image.pixel(x1 + x, y1 + y) = image.pixel(x2 + x, y2 + y);
-
-                image.pixel(x2 + x, y2 + y) = image.pixel(x1 + x, y1 + y);
+                image.pixel(x2 + x, y2 + y) = temp;
             }
         }
     }
