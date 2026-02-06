@@ -13,7 +13,7 @@
 
 ### Effet miroir 
 ![Avant](./images/logo.png)
-![Après](./output/logoMiroir.png)
+![Après](./output/logoMiroir.png)<br>
 Pour cet exercice, la difficulté rencontré est de ne pas créer un symétrie au centre, pour cela il faut créer une copie de l'image de base afin de ne pas recopier des pixels déja modifié.
 
 ### Négatif 
@@ -29,22 +29,22 @@ Pour cet exercice, la difficulté rencontré est de ne pas créer un symétrie a
 
 ### Rotation 
 ![Avant](./images/logo.png)
-![Après](./output/logoRotation.png)
+![Après](./output/logoRotation.png)<br>
 Pour cet exercice, la difficulté a été de comprendre comment passé d'un repère a un autre.
 
 ### RGB Split 
 ![Avant](./images/logo.png)
-![Après](./output/logoRgbSplit.png)
+![Après](./output/logoRgbSplit.png)<br>
 Pour cet exercice, la difficulté a été de trouve les bonnes conditions.
 
 ### Eclaircir 
 ![Avant](./images/photo.jpg)
-![Après](./output/photoEclaircit.jpg)
+![Après](./output/photoEclaircit.jpg)<br>
 Pour cet exercice, la difficulté a été de trouvé la formule qui correspond au graphique transmis dans la consigne.
 
 ### Assombrir
 ![Avant](./images/photo.jpg)
-![Après](./output/photoAssombrit.jpg)
+![Après](./output/photoAssombrit.jpg)<br>
 Pour cet exercice, la difficulté a été la même que pour l'exercice Eclaircir.
 
 ### Disque blanc
@@ -54,14 +54,22 @@ Pour cet exercice, la difficulté a été la même que pour l'exercice Eclaircir
 ![Résultat](./output/cercleBlanc.jpg)
 
 ### Rosace
-![Résultat](./output/rosace.jpg)
+![Résultat](./output/rosace.jpg)<br>
 Pour cette exercice les difficultés on été de :
 - Trouver les formules de maths qui permettent de determiner les centres des cercles
 - Trouver une manière de simplifier les calculs très long afin de ne pas faire des erreurs 
 
 ### Glitch
 ![Avant](./images/logo.png)
-![Après](./output/logoRgbSplit.png)
+![Après](./output/logoGlitch.png)<br>
 Pour cet exercice, la difficulté a été de a gestion de l’échange des pixels entre deux zones. Sans variable temporaire, la première affectation écrasait la valeur initiale, ce qui empêchait un véritable échange et modifiait le rendu de l’effet glitch.
 
+### Mosaique 
+![Avant](./images/logo.png)
+![Après](./output/mosaic.png)
+
+### Mosaique miroir
+![Avant](./images/logo.png)
+![Après](./output/mosaic_mirror.png)<br>
+Pour cet exercice, la difficulté a été de gérer correctement l’alternance des zones miroir à l’aide du modulo et de la division.
 

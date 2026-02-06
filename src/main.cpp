@@ -1,6 +1,7 @@
 #include <sil/sil.hpp>
 #include <random.hpp>
 #include <cmath>
+
 void vert(sil::Image&image){
     for(int y=0; y<image.height();++y){
         for ( int x=0;x<image.width();++x){
@@ -186,8 +187,8 @@ void glitch(sil::Image& image) {
 
         for (int y = 0; y < h; y++) {
             for (int x = 0; x < w; x++) {
-                auto temp = image.pixel(x1 + x, y1 + y);
 
+                auto temp = image.pixel(x1 + x, y1 + y);
                 image.pixel(x1 + x, y1 + y) = image.pixel(x2 + x, y2 + y);
                 image.pixel(x2 + x, y2 + y) = temp;
             }
@@ -195,12 +196,57 @@ void glitch(sil::Image& image) {
     }
 }
 
+void mosaic(sil::Image& image, sil::Image& result){ 
+
+    for (int y = 0; y < result.height(); ++y)
+    {
+        for (int x = 0; x < result.width(); ++x)
+        {
+            int rx = x % image.width();
+            int ry = y % image.height();
+
+            result.pixel(x, y) = image.pixel(rx, ry);
+        }
+    }
+}
+
+void mosaic_miroir(sil::Image& image, sil::Image& result)
+{
+    for (int y = 0; y < result.height(); ++y)
+    {
+        for (int x = 0; x < result.width(); ++x)
+        {
+            int rx = x % image.width();
+            int ry = y % image.height();
+
+            if ((x / image.width()) % 2 == 1)
+                rx = image.width() - 1 - rx;
+
+            if ((y / image.height()) % 2 == 1)
+                ry = image.height() - 1 - ry;
+
+            result.pixel(x, y) = image.pixel(rx, ry);
+        }
+    }
+}
+
 
 int main()
 {
-    sil::Image image{300/*width*/, 200/*height*/};
+    sil::Image image{"images/logo.png"};
+    sil::Image result{image.width()*5, image.height()*5};
+    mosaic_miroir(image, result);
+    result.save("output/mosaic_mirror.png");
+   
+   { sil::Image image{"images/logo.png"};
+    sil::Image result{image.width()*10, image.height()*10};
+    mosaic(image, result);
+    result.save("output/mosaic.png");}
+
+    
+    {sil::Image image{300/*width*/, 200/*height*/};
     degrade(image);
-    image.save("output/degrade.png");
+    image.save("output/degrade.png");}
     
     {sil::Image image{"images/logo.png"};
     glitch(image);
